@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кучка - Мои ссылки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1e35;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff5a76;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff5a76;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .instructions {
+            background-color: rgba(255, 90, 118, 0.15);
+            border-left: 4px solid #ff5a76;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .instruction-list {
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+
+        .instruction-list li {
+            margin-bottom: 8px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #2d3252;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #373f66;
+        }
+
+        .link-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+        }
+
+        .link-text {
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 20px 0;
+            color: #8b8fa3;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="banner.png" alt="Аватарка" class="profile-photo">
+        <h1>ВНИМАНИЕ</h1>
+
+        <div class="instructions">
+            <ol class="instruction-list">
+                <li>Нажми на три точки (справа вверху) и выбери "открыть в браузере"</li>
+                <li>После Ты сможешь открыть Телеграм Канал</li>
+            </ol>
+        </div>
+
+        <div class="social-links">
+            <a href="https://t.me/kuchk1" class="link-button">
+                <img src="telegram-svgrepo-com.svg" alt="Telegram" class="link-icon">
+                <span class="link-text">Телеграм Канал</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Kuchka. Все права защищены.
+    </div>
+</body>
+
+</html>
